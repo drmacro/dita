@@ -141,10 +141,6 @@
           <data type="NMTOKEN"/>
         </attribute>
       </optional>
-      <ref name="univ-atts"/>
-      <optional>
-        <attribute name="outputclass"/>
-      </optional>
     </define>
     <define name="video.element">
       <element name="video" dita:longName="Video object reference">
@@ -211,10 +207,6 @@
           <data type="NMTOKEN"/>
         </attribute>
       </optional>
-      <ref name="univ-atts"/>
-      <optional>
-        <attribute name="outputclass"/>
-      </optional>
     </define>
     <define name="audio.element">
       <element name="audio" dita:longName="Audio object reference">
@@ -249,7 +241,6 @@
           </choice>
         </attribute>
       </optional>
-      <ref name="univ-atts"/>
     </define>
     <define name="media-controls.element">
       <element name="media-controls" dita:longName="Audio object reference">
@@ -283,7 +274,6 @@
           </choice>
         </attribute>
       </optional>
-      <ref name="univ-atts"/>
     </define>
     <define name="media-autoplay.element">
       <element name="media-autoplay" dita:longName="Audio object reference">
@@ -317,7 +307,6 @@
           </choice>
         </attribute>
       </optional>
-      <ref name="univ-atts"/>
     </define>
     <define name="media-loop.element">
       <element name="media-loop" dita:longName="Audio object reference">
@@ -351,7 +340,6 @@
           </choice>
         </attribute>
       </optional>
-      <ref name="univ-atts"/>
     </define>
     <define name="media-muted.element">
       <element name="media-muted" dita:longName="Audio object reference">
@@ -390,7 +378,6 @@
       <optional>
         <attribute name="keyref"/>
       </optional>
-      <ref name="univ-atts"/>
     </define>
     <define name="media-source.element">
       <element name="media-source" dita:longName="Audio object reference">
@@ -438,7 +425,6 @@
       <optional>
         <attribute name="keyref"/>
       </optional>
-      <ref name="univ-atts"/>
     </define>
     <define name="media-track.element">
       <element name="media-track" dita:longName="Audio object reference">
@@ -477,7 +463,6 @@
       <optional>
         <attribute name="keyref"/>
       </optional>
-      <ref name="univ-atts"/>
     </define>
     <define name="video-poster.element">
       <element name="video-poster" dita:longName="Audio object reference">
@@ -494,63 +479,63 @@
   <div>
     <a:documentation> Specialization attributes. Global attributes and class defaults </a:documentation>
     <define name="video.attlist" combine="interleave">
-      <ref name="global-atts"/>
+      <ref name="univ-atts"/>
       <optional>
         <attribute name="class"
           a:defaultValue="+ topic/object media-d/video "/>
       </optional>
     </define>
     <define name="audio.attlist" combine="interleave">
-      <ref name="global-atts"/>
+      <ref name="univ-atts"/>
       <optional>
         <attribute name="class"
           a:defaultValue="+ topic/object media-d/audio "/>
       </optional>
     </define>
     <define name="media-controls.attlist" combine="interleave">
-      <ref name="global-atts"/>
+      <ref name="univ-atts"/>
       <optional>
         <attribute name="class"
           a:defaultValue="+ topic/param media-d/media-controls "/>
       </optional>
     </define>
     <define name="media-autoplay.attlist" combine="interleave">
-      <ref name="global-atts"/>
+      <ref name="univ-atts"/>
       <optional>
         <attribute name="class"
           a:defaultValue="+ topic/param media-d/media-autoplay "/>
       </optional>
     </define>
     <define name="media-loop.attlist" combine="interleave">
-      <ref name="global-atts"/>
+      <ref name="univ-atts"/>
       <optional>
         <attribute name="class"
           a:defaultValue="+ topic/param media-d/media-loop "/>
       </optional>
     </define>
     <define name="media-muted.attlist" combine="interleave">
-      <ref name="global-atts"/>
+      <ref name="univ-atts"/>
       <optional>
         <attribute name="class"
           a:defaultValue="+ topic/param media-d/media-muted "/>
       </optional>
     </define>
     <define name="video-poster.attlist" combine="interleave">
-      <ref name="global-atts"/>
+      <ref name="univ-atts"/>
       <optional>
         <attribute name="class"
           a:defaultValue="+ topic/param media-d/video-poster "/>
       </optional>
     </define>
     <define name="media-source.attlist" combine="interleave">
-      <ref name="global-atts"/>
+      <ref name="univ-atts"/>
       <optional>
         <attribute name="class"
           a:defaultValue="+ topic/param media-d/media-source "/>
       </optional>
     </define>
     <define name="media-track.attlist" combine="interleave">
-      <ref name="global-atts"/>
+      <ref name="univ-atts"/>
       <optional>
         <attribute name="class"
           a:defaultValue="+ topic/param media-d/media-track "/>
