@@ -80,6 +80,8 @@ UPDATES:
   </div>
   <div>
     <a:documentation>MODULE INCLUSIONS</a:documentation>
+    <include href="commonElementsDeclMod.rng"/>
+    <include href="metaDeclMod.rng"/>
     <include href="topicMod.rng">
       <define name="topic-info-types">
         <ref name="topic.element"/>

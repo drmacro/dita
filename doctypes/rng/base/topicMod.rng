@@ -121,14 +121,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Topic//EN"
 
   </div>
   <div>
-    <a:documentation>COMMON CONTENT MODEL PATTERNS</a:documentation>
-
-    <include href="commonElementsMod.rng">
-      <a:documentation>Content elements common to map and topic</a:documentation>
-    </include>
-    <include href="metaDeclMod.rng">
-      <a:documentation>MetaData Elements, plus indexterm</a:documentation>
-    </include>
 
     <define name="abstract.cnt">
       <choice>

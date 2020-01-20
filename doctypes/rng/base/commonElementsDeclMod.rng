@@ -25,7 +25,7 @@
  Refer to this file by the following public identifier or an 
       appropriate system identifier 
 PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
-      Delivered as file "commonElements.mod"                      
+      Delivered as file "commonElementsDecl.mod"                      
 
 =============================================================
 
@@ -41,18 +41,19 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
    2019.08.21 KJE: Modified content model of indexterm;
                    removed index-base and added index-see
                    and index-see-also
+   2020.01.20 WEK: Renamed to commonElementsDecl.mod
 =============================================================     
  ]]></headerComment>
     <moduleMetadata>
       <moduleType>base</moduleType>
-      <moduleShortName>commonElements</moduleShortName>
+      <moduleShortName>commonElementsDecl</moduleShortName>
       <modulePublicIds>
-        <dtdMod>-//OASIS//ELEMENTS DITA<var presep=" " name="ditaver"/> Common Elements//EN</dtdMod>
-        <dtdEnt>-//OASIS//ENTITIES DITA<var presep=" " name="ditaver"/> Common Elements//EN</dtdEnt>
-        <xsdMod>urn:oasis:names:tc:dita:xsd:commonElementMod.xsd<var presep=":" name="ditaver"/></xsdMod>
-        <xsdGrp>urn:oasis:names:tc:dita:xsd:commonElementGrp.xsd<var presep=":" name="ditaver"/></xsdGrp>
-        <rncMod>urn:oasis:names:tc:dita:rnc:commonElementsMod.rnc<var presep=":" name="ditaver"/></rncMod>
-        <rngMod>urn:oasis:names:tc:dita:rng:commonElementsMod.rng<var presep=":" name="ditaver"/></rngMod>
+        <dtdMod>-//OASIS//ELEMENTS DITA<var presep=" " name="ditaver"/> Common Elements Decl//EN</dtdMod>
+        <dtdEnt>-//OASIS//ENTITIES DITA<var presep=" " name="ditaver"/> Common Elements Decl//EN</dtdEnt>
+        <xsdMod>urn:oasis:names:tc:dita:xsd:commonElementDeclMod.xsd<var presep=":" name="ditaver"/></xsdMod>
+        <xsdGrp>urn:oasis:names:tc:dita:xsd:commonElementDeclGrp.xsd<var presep=":" name="ditaver"/></xsdGrp>
+        <rncMod>urn:oasis:names:tc:dita:rnc:commonElementsDeclMod.rnc<var presep=":" name="ditaver"/></rncMod>
+        <rngMod>urn:oasis:names:tc:dita:rng:commonElementsDeclMod.rng<var presep=":" name="ditaver"/></rngMod>
       </modulePublicIds>
       <domainsContribution/>
     </moduleMetadata>
@@ -1308,9 +1309,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           </zeroOrMore>
         </define>
         <define name="linktext.attributes">
-          <optional>
-            <attribute name="outputclass"/>
-          </optional>
           <ref name="univ-atts"/>
         </define>
         <define name="linktext.element">
