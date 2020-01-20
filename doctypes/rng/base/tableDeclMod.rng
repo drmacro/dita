@@ -141,7 +141,7 @@ For <entry>, add:
   </define>
   
   <!-- default for use in entry content -->
-  <define name="tbl.table-titles.mdl">
+  <define name="tbl.table-titles.cnt">
     <optional>
       <ref name="title"/>
     </optional>
@@ -154,8 +154,8 @@ For <entry>, add:
       <ref name="tgroup"/>
     </oneOrMore>
   </define>
-  <define name="tbl.table.mdl">
-    <ref name="tbl.table-titles.mdl"/>
+  <define name="tbl.table.cnt">
+    <ref name="tbl.table-titles.cnt"/>
     <ref name="tbl.table-main.mdl"/>
   </define>
   <define name="tbl.table.att">
@@ -168,7 +168,7 @@ For <entry>, add:
   <define name="bodyatt">
     <empty/>
   </define>
-  <define name="tbl.tgroup.mdl">
+  <define name="tbl.tgroup.cnt">
     <zeroOrMore>
       <ref name="colspec"/>
     </zeroOrMore>
@@ -310,7 +310,7 @@ For <entry>, add:
   
   <!--  -->
   <define name="table.content">
-    <ref name="tbl.table.mdl"/>
+    <ref name="tbl.table.cnt"/>
   </define>
   <define name="table.attributes">
     <optional>
@@ -352,7 +352,7 @@ For <entry>, add:
   
   <!--  -->
   <define name="tgroup.content">
-    <ref name="tbl.tgroup.mdl"/>
+    <ref name="tbl.tgroup.cnt"/>
   </define>
   <define name="tgroup.attributes">
     <attribute name="cols">
