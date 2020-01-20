@@ -51,6 +51,89 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Metadata//EN"
       <domainsContribution/>
     </moduleMetadata>
   </moduleDesc>
+  
+  <div>
+    <a:documentation>ELEMENT TYPE NAME PATTERNS</a:documentation>
+    <define name="audience">
+      <ref name="audience.element"/>
+    </define>
+    <define name="author">
+      <ref name="author.element"/>
+    </define>
+    <define name="brand">
+      <ref name="brand.element"/>
+    </define>
+    <define name="category">
+      <ref name="category.element"/>
+    </define>
+    <define name="component">
+      <ref name="component.element"/>
+    </define>
+    <define name="copyrholder">
+      <ref name="copyrholder.element"/>
+    </define>
+    <define name="copyright">
+      <ref name="copyright.element"/>
+    </define>
+    <define name="copyryear">
+      <ref name="copyryear.element"/>
+    </define>
+    <define name="created">
+      <ref name="created.element"/>
+    </define>
+    <define name="critdates">
+      <ref name="critdates.element"/>
+    </define>
+    <define name="featnum">
+      <ref name="featnum.element"/>
+    </define>
+    <define name="keywords">
+      <ref name="keywords.element"/>
+    </define>
+    <define name="metadata">
+      <ref name="metadata.element"/>
+    </define>
+    <define name="othermeta">
+      <ref name="othermeta.element"/>
+    </define>
+    <define name="permissions">
+      <ref name="permissions.element"/>
+    </define>
+    <define name="platform">
+      <ref name="platform.element"/>
+    </define>
+    <define name="prodinfo">
+      <ref name="prodinfo.element"/>
+    </define>
+    <define name="prodname">
+      <ref name="prodname.element"/>
+    </define>
+    <define name="prognum">
+      <ref name="prognum.element"/>
+    </define>
+    <define name="publisher">
+      <ref name="publisher.element"/>
+    </define>
+    <define name="resourceid">
+      <ref name="resourceid.element"/>
+    </define>
+    <define name="revised">
+      <ref name="revised.element"/>
+    </define>
+    <define name="series">
+      <ref name="series.element"/>
+    </define>
+    <define name="source">
+      <ref name="source.element"/>
+    </define>
+    <define name="vrm">
+      <ref name="vrm.element"/>
+    </define>
+    <define name="vrmlist">
+      <ref name="vrmlist.element"/>
+    </define>
+  </div>
+  
   <div>
     <a:documentation>Define type patterns</a:documentation>
     <define name="date-format">

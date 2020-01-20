@@ -24,7 +24,7 @@
  UPDATES:                                                    
 
 =============================================================
- Delivered as file "tblDecl.mod"                             
+ Delivered as file "tableDecl.mod"                             
 =============================================================
 
 
@@ -82,17 +82,43 @@ For <entry>, add:
  ]]></headerComment>
    <moduleMetadata>
      <moduleType>base</moduleType>
-     <moduleShortName>tblDecl</moduleShortName>
+     <moduleShortName>tableDecl</moduleShortName>
      <modulePublicIds>
        <dtdMod>-//OASIS//ELEMENTS DITA<var presep=" " name="ditaver"/> Exchange Table Model//EN</dtdMod>
-       <xsdMod>urn:oasis:names:tc:dita:xsd:tblDeclMod.xsd<var presep=":" name="ditaver"/></xsdMod>
-       <xsdGrp>urn:oasis:names:tc:dita:xsd:tblDeclGrp.xsd<var presep=":" name="ditaver"/></xsdGrp>
-       <rncMod>urn:oasis:names:tc:dita:rnc:tblDeclMod.rnc<var presep=":" name="ditaver"/></rncMod>
-       <rngMod>urn:oasis:names:tc:dita:rng:tblDeclMod.rng<var presep=":" name="ditaver"/></rngMod>
+       <xsdMod>urn:oasis:names:tc:dita:xsd:tableDeclMod.xsd<var presep=":" name="ditaver"/></xsdMod>
+       <xsdGrp>urn:oasis:names:tc:dita:xsd:tableDeclGrp.xsd<var presep=":" name="ditaver"/></xsdGrp>
+       <rncMod>urn:oasis:names:tc:dita:rnc:tableDeclMod.rnc<var presep=":" name="ditaver"/></rncMod>
+       <rngMod>urn:oasis:names:tc:dita:rng:tableDeclMod.rng<var presep=":" name="ditaver"/></rngMod>
      </modulePublicIds>
      <domainsContribution/>
    </moduleMetadata>
  </moduleDesc>  
+  
+  <div>
+    <a:documentation>ELEMENT TYPE NAME PATTERNS</a:documentation>
+    <define name="table">
+      <ref name="table.element"/>
+    </define>
+    <define name="colspec">
+      <ref name="colspec.element"/>
+    </define>
+    <define name="entry">
+      <ref name="entry.element"/>
+    </define>
+    <define name="row">
+      <ref name="row.element"/>
+    </define>
+    <define name="tbody">
+      <ref name="tbody.element"/>
+    </define>
+    <define name="tgroup">
+      <ref name="tgroup.element"/>
+    </define>
+    <define name="thead">
+      <ref name="thead.element"/>
+    </define>
+  </div>
+  
   <!-- Define type patterns -->
   <define name="yesorno">
     <data type="NMTOKEN"/>

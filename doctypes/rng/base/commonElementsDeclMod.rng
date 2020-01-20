@@ -235,111 +235,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
     <define name="xref">
       <ref name="xref.element"/>
     </define>
-    <div>
-      <a:documentation>Elements in tblDeclMod</a:documentation>
-      <define name="table">
-        <ref name="table.element"/>
-      </define>
-      <define name="colspec">
-        <ref name="colspec.element"/>
-      </define>
-      <define name="entry">
-        <ref name="entry.element"/>
-      </define>
-      <define name="row">
-        <ref name="row.element"/>
-      </define>
-      <define name="tbody">
-        <ref name="tbody.element"/>
-      </define>
-      <define name="tgroup">
-        <ref name="tgroup.element"/>
-      </define>
-      <define name="thead">
-        <ref name="thead.element"/>
-      </define>
-    </div>
-    <div>
-      <a:documentation>Elements in metaDeclMod </a:documentation>
-      <define name="audience">
-        <ref name="audience.element"/>
-      </define>
-      <define name="author">
-        <ref name="author.element"/>
-      </define>
-      <define name="brand">
-        <ref name="brand.element"/>
-      </define>
-      <define name="category">
-        <ref name="category.element"/>
-      </define>
-      <define name="component">
-        <ref name="component.element"/>
-      </define>
-      <define name="copyrholder">
-        <ref name="copyrholder.element"/>
-      </define>
-      <define name="copyright">
-        <ref name="copyright.element"/>
-      </define>
-      <define name="copyryear">
-        <ref name="copyryear.element"/>
-      </define>
-      <define name="created">
-        <ref name="created.element"/>
-      </define>
-      <define name="critdates">
-        <ref name="critdates.element"/>
-      </define>
-      <define name="featnum">
-        <ref name="featnum.element"/>
-      </define>
-      <define name="keywords">
-        <ref name="keywords.element"/>
-      </define>
-      <define name="metadata">
-        <ref name="metadata.element"/>
-      </define>
-      <define name="othermeta">
-        <ref name="othermeta.element"/>
-      </define>
-      <define name="permissions">
-        <ref name="permissions.element"/>
-      </define>
-      <define name="platform">
-        <ref name="platform.element"/>
-      </define>
-      <define name="prodinfo">
-        <ref name="prodinfo.element"/>
-      </define>
-      <define name="prodname">
-        <ref name="prodname.element"/>
-      </define>
-      <define name="prognum">
-        <ref name="prognum.element"/>
-      </define>
-      <define name="publisher">
-        <ref name="publisher.element"/>
-      </define>
-      <define name="resourceid">
-        <ref name="resourceid.element"/>
-      </define>
-      <define name="revised">
-        <ref name="revised.element"/>
-      </define>
-      <define name="series">
-        <ref name="series.element"/>
-      </define>
-      <define name="source">
-        <ref name="source.element"/>
-      </define>
-      <define name="vrm">
-        <ref name="vrm.element"/>
-      </define>
-      <define name="vrmlist">
-        <ref name="vrmlist.element"/>
-      </define>
-    </div>
   </div>
   <div>
     <a:documentation>COMMENT ELEMENT SETS</a:documentation>
@@ -2918,7 +2813,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
         </define>
       </div>
     </div>
-    <include href="tblDeclMod.rng"/>
   </div>
   <div>
   <a:documentation xml:space="preserve">LONG NAME: Fallback

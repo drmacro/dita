@@ -88,8 +88,9 @@ PUBLIC "-//OASIS//DTD DITA 2.0 Base Map//EN"
   </div>
   <div>
       <a:documentation>MODULE INCLUSIONS</a:documentation>
-      <include href="commonElementsDeclMod.rng"/>
       <include href="metaDeclMod.rng"/>
+      <include href="tableDeclMod.rng"/>
+      <include href="commonElementsDeclMod.rng"/>
      
       <include href="mapMod.rng"/>
       <include href="mapGroupDomain.rng"/>
