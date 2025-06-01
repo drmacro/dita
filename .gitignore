@@ -4,6 +4,7 @@ specification/out/pdf/ditaweb-review-e.pdf
 **/temp
 **/out
 *.pdf
+.DS_Store
 specification/out/pdf/ditaweb-review-c.pdf
 *.pdf
 # Ignore Gradle project-specific cache directory
