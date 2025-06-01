@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ditaval-example-flagging-with-outputclass">
+    <title>Example: ditaval flagging with outputclass</title>
+    <shortdesc>Rather than using the separate attributes of <xmlelement>prop</xmlelement> to define flagging details, you can specify <xmlatt>outputclass</xmlatt> and define the styling and behavior details in the delivery system, such as
+        an HTML web site.</shortdesc>
+    <conbody>
+        <p>In DITA, the <xmlatt>outputclass</xmlatt> attribute can be specified on elements to specify hints for how to process or render the elements, such as by using the value of <xmlatt>outputclass</xmlatt> as the value of HTML
+                <xmlatt>class</xmlatt> attributes in generated HTML, where it can be used with normal HTML styling mechanisms, such as CSS style sheets.</p>
+        <p>You can use this same technique for flagging content by setting <xmlatt>outputclass</xmlatt> on <xmlelement>prop</xmlelement> elements with an <xmlatt>action</xmlatt> value of <keyword>flag</keyword>. Elements to which the
+            flagging condition applies should then reflect the <xmlatt>outputclass</xmlatt> value in generated output, i.e., by setting it on HTML <xmlatt>class</xmlatt> attributes.</p>
+        <p>This use of <xmlatt>outputclass</xmlatt> for flagging allows you to define the details of how flagged content is styled in the delivery system, rather than in the DITAVAL file. For example, for web delivery, this allows you to
+            manage the flagging styling in the same CSS style sheets that style the base content. It also means that you can change the styling details without having to update the DITAVAL files and republish the content.</p>
+        <p>For example, in your published content you want to flag paragraphs for specific audiences with different visual treatments, including adding icons and making expert-level content collapsed by default. To enable this, you use
+                <xmlatt>outputclass</xmlatt> values of the form <codeph>flag-<varname>audience</varname></codeph>, which will then allow styling using normal CSS techniques. You also configure the HTML generation processor to wrap
+            expert-level content in HTML <xmlelement>details</xmlelement> elements to make them inherently collapsible and expandable.</p>
+        <p>The DITAVAL defines a <xmlelement>prop</xmlelement> element for each <xmlatt>audience</xmlatt> value. Each <xmlelement>prop</xmlelement> element sets the <xmlatt>outputclass</xmlatt> value to reflect the audience
+            value:<codeblock>
+&lt;val>
+    &lt;prop att="audience" action="flag" 
+        <b>val="novice"</b>
+        <b>outputclass="flag-novice"</b>
+    />
+    &lt;prop att="audience" action="flag" 
+        <b>val="adept"</b>
+        <b>outputclass="flag-adept"</b>
+    />
+    &lt;prop att="audience" action="flag" 
+        <b>val="expert"</b>
+        <b>outputclass="flag-expert"</b>
+    />
+&lt;/val>
+</codeblock></p>
+        <p>When rendered to HTML, the pargraphs should reflect the <xmlatt>outputclass</xmlatt> values:<codeblock>
+&lt;html>
+  ...
+  &lt;body>
+    ...
+    &lt;p <b>class="flag-novice"</b>>Novice-level content&lt;/p>
+    &lt;p <b>class="flag-adept"</b>>Adept-level content&lt;/p>
+    &lt;details <b>class="flag-expert"</b>>
+      &lt;summary>Expand for expert content&lt;/summary>
+      &lt;p <b>class="flag-expert"</b>>Expert-level content&lt;/p>
+    &lt;/details>
+    ...
+  &lt;/body>
+&lt;/html>
+</codeblock></p>
+        <p>In the CSS style sheet applied to this HTML, the flagging could be styled in a variety of ways. Here the CSS adds different icons before the paragraphs and sets their background colors to different values. Modern browsers should
+            automatically make the <xmlelement>details</xmlelement> element expandable.<codeblock>
+/* Style for flagged content */
+
+@font-face {
+  font-family: "Font Awesome";
+  font-style: normal;
+  font-weight: 900;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/webfonts/fa-solid-900.woff2") format("woff2"),
+       url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/webfonts/fa-solid-900.woff") format("woff");
+}    
+:root {
+  font-family: sans-serif;
+}
+
+p.flag-novice {
+  background-color: aqua;
+}
+p.flag-novice:before {
+   font-family: 'Font Awesome';
+   content: '\f2bd'; /* 'user' icon */
+   margin-right: 0.5em;
+}
+
+p.flag-adept {
+  background-color: chartreuse;
+}
+p.flag-adept:before {
+   font-family: 'Font Awesome';
+   content: '\f19d'; /* 'graduation-cap' icon */
+   margin-right: 0.5em;
+}
+
+details.flag-expert {
+  background-color: lightsalmon;
+}
+details.flag-expert:before {
+   font-family: 'Font Awesome';
+   content: '\f5a2'; /* 'medal' icon */
+   margin-right: 0.5em;
+}   
+</codeblock></p>
+        <p>The rendered HTML using this style sheet is:<image
+                href="flagged-topic-outputclass.png"
+                placement="break">
+                <alt>An HTML page with four paragraphs, one with unflagged content that is unstyled, the others showing distinct icons, one for each <xmlatt>audience</xmlatt> value. The expert content is collapsed.</alt>
+            </image></p>
+    </conbody>
+</concept>

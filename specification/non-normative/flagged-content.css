@@ -1,0 +1,39 @@
+/* Style for flagged content */
+
+@font-face {
+  font-family: "Font Awesome";
+  font-style: normal;
+  font-weight: 900;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/webfonts/fa-solid-900.woff2") format("woff2"),
+       url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/webfonts/fa-solid-900.woff") format("woff");
+}    
+:root {
+  font-family: sans-serif;
+}
+p.flag-novice {
+  background-color: aqua;
+}
+p.flag-novice:before {
+   font-family: 'Font Awesome';
+   content: '\f2bd'; /* 'user' icon */
+   margin-right: 0.5em;
+}
+
+p.flag-adept {
+  background-color: chartreuse;
+}
+p.flag-adept:before {
+   font-family: 'Font Awesome';
+   content: '\f19d'; /* 'graduation-cap' icon */
+   margin-right: 0.5em;
+}
+
+details.flag-expert {
+  background-color: lightsalmon;
+}
+details.flag-expert summary:before {
+   font-family: 'Font Awesome';
+   content: '\f5a2'; /* 'medal' icon */
+   margin-right: 0.5em;
+}
+      
